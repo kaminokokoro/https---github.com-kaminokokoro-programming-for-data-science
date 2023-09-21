@@ -8,4 +8,4 @@ def dualFactorial(n):
         return n * dualFactorial(n - 2)
 
 
-print(dualFactorial(n))
+print(str(n) + "!! =", dualFactorial(n))

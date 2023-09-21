@@ -2,6 +2,8 @@ n = int(input())
 
 
 def isPrime(n):
+    if n == 2:
+        return True
     if n < 2:
         return False
     for i in range(2, n):
@@ -13,7 +15,7 @@ def isPrime(n):
 def isSuperPrime(n):
     if isPrime(n):
         while n > 0:
-            if not isPrime(n % 10):
+            if not isPrime(n):
                 return False
             n //= 10
         return True

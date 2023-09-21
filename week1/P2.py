@@ -11,4 +11,4 @@ def slover(a, b, c):
     elif delta == 0:
         print(-b / (2 * a))
     else:
-        print((-b - delta**0.5) / (2 * a), " ", (-b + delta**0.5) / (2 * a))
+        print((-b - delta**0.5) / (2 * a), (-b + delta**0.5) / (2 * a))

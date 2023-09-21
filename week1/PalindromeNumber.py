@@ -1,6 +1,6 @@
 def is_palindrome(p):
     t = str(p)
     t = reversed(t)
-    if p == int(t):
+    if int(p) == int("".join(t)):
         return True
     return False

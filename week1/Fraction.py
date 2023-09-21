@@ -5,7 +5,7 @@ import math
 
 
 def is_minimalist_fraction(numerator, denominator):
-    if math.gdc(numerator, denominator) == 1 or numerator == 0:
+    if math.gcd(numerator, denominator) == 1 or numerator == 0:
         return True
     return False
 
@@ -16,6 +16,6 @@ def is_minimalist_fraction(numerator, denominator):
 def get_minimalist_fraction(numerator, denominator):
     if is_minimalist_fraction(numerator, denominator):
         return numerator, denominator
-    return numerator // math.gdc(numerator, denominator), denominator // math.gdc(
+    return numerator // math.gcd(numerator, denominator), denominator // math.gcd(
         numerator, denominator
     )
